@@ -1,0 +1,38 @@
+{
+  "name": "lodash-mp-polyfill",
+  "version": "1.0.0",
+  "description": "解决 lodash 无法在小程序中使用的问题,理论上也支持其他小程序框架( uniapp, taro )",
+  "scripts": {
+    "build": "rimraf dist && rollup -c"
+  },
+  "main": "./dist/es/index.mjs",
+  "exports": {
+    ".": {
+      "import": "./dist/es/index.mjs",
+      "require": "./dist/cjs/index.cjs"
+    }
+  },
+  "types": "./dist/types",
+  "type": "module",
+  "keywords": [
+    "lodash",
+    "lodash-es",
+    "miniprogram",
+    "polyfill"
+  ],
+  "author": "alva-yky",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:xiaoyang-web/lodash-mp-polyfill.git"
+  },
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.3",
+    "@types/node": "^20.4.7",
+    "rimraf": "^5.0.1",
+    "rollup": "^3.27.1",
+    "rollup-plugin-typescript2": "^0.35.0",
+    "tslib": "^2.6.1",
+    "typescript": "^5.1.6"
+  }
+}
