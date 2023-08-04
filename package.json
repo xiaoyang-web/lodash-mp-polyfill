@@ -1,5 +1,5 @@
 {
-  "name": "lodash-mp-polyfill",
+  "name": "@sdb/lodash-mp-polyfill",
   "version": "1.0.0",
   "description": "解决 lodash 无法在小程序中使用的问题,理论上也支持其他小程序框架( uniapp, taro )",
   "scripts": {
