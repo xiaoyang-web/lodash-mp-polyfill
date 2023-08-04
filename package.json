@@ -6,6 +6,7 @@
     "build": "rimraf dist && rollup -c"
   },
   "main": "./dist/es/index.mjs",
+  "files": ["dist", "src"],
   "exports": {
     ".": {
       "import": "./dist/es/index.mjs",
