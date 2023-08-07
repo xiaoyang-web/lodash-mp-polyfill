@@ -5,7 +5,7 @@
 ### 安装
 
 ```shell
-npm install lodash-mp-polyfill -D
+npm install @sdb/lodash-mp-polyfill -D
 ```
 
 ### 使用
