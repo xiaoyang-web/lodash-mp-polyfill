@@ -37,7 +37,7 @@
       setInterval,
       setTimeout,
     };
-    Object.assign(global, types);
+    Object.assign(global || globalThis, types);
   } catch (err) {
     console.error("set lodash polyfill failed", err);
   }
